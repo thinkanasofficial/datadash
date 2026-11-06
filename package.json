@@ -1,0 +1,9 @@
+{
+  "name": "pulseledger-d3-dashboard",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {"dev": "vite --host 0.0.0.0", "build": "tsc -b && vite build", "preview": "vite preview", "test": "vitest run", "test:ui": "playwright test tests/dashboard.spec.ts", "bench": "playwright test benchmarks/measure.spec.ts", "eval": "npm run test && npm run test:ui && npm run bench"},
+  "dependencies": {"react": "^18.3.1", "react-dom": "^18.3.1", "d3": "^7.9.0", "lucide-react": "^0.468.0"},
+  "devDependencies": {"@playwright/test": "^1.58.0", "@types/d3": "^7.4.3", "@types/node": "^22.15.0", "@types/react": "^18.3.0", "@types/react-dom": "^18.3.0", "@vitejs/plugin-react": "^4.4.1", "typescript": "~5.8.3", "vite": "^6.2.0", "vitest": "^3.1.1"}
+}
